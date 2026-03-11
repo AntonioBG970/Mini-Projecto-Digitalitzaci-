@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block contenido %}
+<h1>🛍️ Nuestra Tienda</h1>
+
+<h2>Categorías</h2>
+{% for categoria in categorias %}
+    <span style="background:#333; color:white; padding:5px 10px; border-radius:20px; margin:3px;">
+        {{ categoria.nombre }}
+    </span>
+{% endfor %}
+
+<h2>Productos</h2>
+{% for producto in productos %}
+    <div class="tarjeta">
+        <h3>{{ producto.nombre }}</h3>
+        <p>📦 {{ producto.categoria }}</p>
+        <p>💰 {{ producto.precio }}€</p>
+        <p>🔢 Stock: {{ producto.stock }}</p>
+        <a href="/producto/{{ producto.pk }}/">Ver más</a>
+    </div>
+{% endfor %}
+{% endblock %}
