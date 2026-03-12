@@ -1,4 +1,5 @@
 Descripción
+
 El proyecto está organizado siguiendo la estructura estándar de Django:
 
 gestio/ → configuración del proyecto
