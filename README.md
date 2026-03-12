@@ -41,3 +41,9 @@ Sus dependencias principales son:
 
 Ahora para ejecutar la migración para preparar la base de datos haces:
 python manage.py migrate
+
+Después iniciamos el servidor. Para ello ponemos:
+python manage.py runserver
+
+Por último, para acceder a la aplicación ves al navegador y escribes:
+http://127.0.0.1:8000
